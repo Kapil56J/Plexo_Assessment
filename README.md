@@ -2,6 +2,12 @@
 
 A comprehensive React-based content moderation dashboard that allows moderators to efficiently review and manage user-submitted content with streamlined workflows and batch operations.
 
+## 🌐 Live Demo
+
+**🚀 [View Live Dashboard](https://plexo-assessment.vercel.app/)**
+
+Experience the full-featured content moderation dashboard deployed on Vercel.
+
 ## 🚀 Features
 
 ### ✅ Core Features (Required)
