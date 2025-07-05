@@ -1,0 +1,34 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-list-empty {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-list-empty p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-list {
+    gap: 12px;
+  }
+
+  .post-list-empty {
+    padding: 30px 20px;
+  }
+
+  .post-list-empty p {
+    font-size: 1rem;
+  }
+} 

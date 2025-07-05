@@ -1,0 +1,173 @@
+.post-item {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  margin-bottom: 4px;
+}
+
+.post-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.post-item.selected {
+  border-color: #007bff;
+  background: #f8f9ff;
+}
+
+.post-checkbox {
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.post-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  flex: 1;
+  min-width: 0;
+}
+
+.post-title:hover {
+  color: #007bff;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.post-meta span {
+  font-size: 0.875rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-reported-reason {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.warning-icon {
+  color: #856404;
+}
+
+.reported-text {
+  color: #856404;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.post-preview {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  max-width: none;
+}
+
+.post-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.post-actions .btn {
+  width: 110px;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .post-checkbox {
+    order: -1;
+    align-self: flex-start;
+  }
+
+  .post-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-title {
+    font-size: 1rem;
+  }
+
+  .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .post-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .post-actions .btn {
+    width: auto;
+    flex: 1;
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-item {
+    padding: 12px;
+  }
+
+  .post-actions {
+    flex-direction: column;
+  }
+
+  .post-actions .btn {
+    width: 100%;
+  }
+} 
